@@ -1,0 +1,217 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #e228d8 #070d12;
+  }
+
+
+body {
+    background-image: url("../imagens/fundo-site.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'VT323', monospace;
+    color: #F3F3F3; 
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.card {
+    background-color: #070b12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.card .my-informations {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* alinha horizontalmente por causa do flex direction column*/
+    gap: 10px;
+}
+
+.card .my-informations img {
+    width: 150px;
+    max-height: 155px;
+    border: 2px outset #e126d9;
+    border-radius: 50%;
+    transition: 400ms;
+    
+    
+}
+
+.card .my-informations .nome {
+    font-size: 26px;
+}
+
+.card .my-informations .cargo {
+    font-size: 20px;
+    color: #b8bbc5;
+}
+.card .content {
+    margin-top: 15px;
+}
+
+.card .abas {
+    display: flex;
+}
+
+.card .abas .aba {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card .abas img {
+    width: 30px;
+}
+
+.card .abas .aba.selecionado {
+    background-color: #262626;
+}
+
+.card .informations-abas {
+    background-color: #262626;
+}
+
+.card .abas .aba:hover {
+    background-color: #414141;
+    
+}
+
+.informations-abas .information {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+    letter-spacing: 1px;
+}
+
+.informations-abas .information.selecionado {
+    display: block;
+}
+
+.informations-abas .sub-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informations-abas .description {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informations-abas .description span {
+    color: #02d08f; 
+}
+
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a {
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.redes-sociais li a:hover {
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo {
+    background-color: #a4d338;
+} 
+
+.redes-sociais .curriculo img {
+    width: 18px;
+    margin: 0 5px 0 0;    
+}
+
+.redes-sociais .linkedin {
+    background-color: #1d87bd;
+}
+
+.redes-sociais .linkedin img {
+    max-width: 22px;
+    margin-right: 7px; 
+}
+
+.redes-sociais .github {
+    background-color: #724570;
+}
+
+.redes-sociais .github img {
+    max-width: 21px;
+    margin-right: 33px;
+
+}
+
+.redes-sociais .certificados {
+    background-color: lightcoral;
+}
+
+.redes-sociais .curriculo img {
+    max-width: 20px;
+    margin: 0 5px 0 0;
+    
+}
+
+.redes-sociais .certificados img {
+    max-width: 20px;
+    margin-right: 3px;
+}
+
+.redes-sociais .whatsapp {
+    background-color: #1a946d;
+    
+}
+
+.redes-sociais .whatsapp img {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+.redes-sociais .email {
+    background-color: rgba(29, 87, 168, 0.993);
+}
+
+.redes-sociais .email span {
+    font-size: 18px; 
+}
+
+.redes-sociais .email img {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+.redes-sociais .localizacao {
+    background-color: lightcoral;
+}
+
+.redes-sociais .localizacao img {
+    max-width: 23px;
+    margin-left: 5px;
+}
